@@ -8,7 +8,7 @@ const Benefits = () => {
     <section id='benefits' className='mb-20'>
       <div
         id='benefitContainer'
-        className='grid md:grid-cols-2 xl:grid-cols-4 gap-[2%]'
+        className='grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-[2%]'
       >
         {benefitIcons.map((benefit) => (
           <BenefitCard key={benefit.id} benefit={benefit} />
