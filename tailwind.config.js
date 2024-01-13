@@ -5,10 +5,13 @@ export default {
     extend: {
       colors: {
         primary: 'var(--primary)',
-        primaryLight: 'var(--primary-light)',
+        primaryLight: 'var(--primaryLight)',
         secondary: 'var(--secondary)',
-        secondaryLight: 'var(--secondary-light)',
+        secondaryLight: 'var(--secondaryLight)',
         gray: 'var(--gray)',
+      },
+      fontFamily: {
+        Barlow: ['Barlow', 'sans-serif'],
       },
     },
   },
