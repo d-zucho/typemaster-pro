@@ -22,15 +22,17 @@ const Info = () => {
           className='rounded-2xl object-cover w-full h-full'
         />
       </div>
-      <div
-        id='img2'
-        className='flex flex-col text-3xl font-bold text-secondary justify-center items-center col-span-3'
-      >
-        <h2>
+      <div id='img2' className='flex flex-col justify-center gap-4 col-span-3'>
+        <h2 className='text-3xl font-bold text-secondary'>
           <span className='block leading-9'>Mechanical</span>{' '}
           <span className='block leading-9'>Wireless</span>{' '}
           <span className='block leading-9'>Keyboard</span>
         </h2>
+        <p className='text-secondaryLight'>
+          The Typemaster keyboard boasts top-notch build and practical design.
+          It offers a wide variety of switches and keycaps, along with reliable
+          wireless connectivity.
+        </p>
       </div>
     </section>
   )

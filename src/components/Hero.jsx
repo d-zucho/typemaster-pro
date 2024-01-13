@@ -1,11 +1,13 @@
-import HeroImg from '../assets/desktop/image-keyboard.jpg'
+import HeroImgMobile from '../assets/mobile/image-keyboard.jpg'
+import HeroImgTablet from '../assets/tablet/image-keyboard.jpg'
+import HeroImgDesktop from '../assets/desktop/image-keyboard.jpg'
 
 const Hero = () => {
   return (
     <section id='hero' className='mt-20'>
-      <div id='hero-container' className='flex gap-8'>
+      <div id='hero-container' className='flex flex-col gap-8 md:flex-row'>
         <div className='hero-text flex justify-center flex-1 flex-col gap-20px'>
-          <h1 className='uppercase text-5xl font-black'>
+          <h1 className='uppercase text-5xl lg:text-6xl font-black'>
             Typemaster <span className='block font-Barlow'>Keyboard</span>
           </h1>
           <p className='text-secondaryLight mt-6'>
@@ -21,8 +23,15 @@ const Hero = () => {
             </span>
           </div>
         </div>
-        <div id='hero-image-container' className='flex-1'>
-          <img src={HeroImg} alt='Keyboard' className='rounded-2xl' />
+        <div
+          id='hero-image-container'
+          className='flex-1 rounded-2xl max-w-[480px] mx-auto'
+        >
+          <picture className='rounded-2xl'>
+            <source media='(min-width: 1200px)' srcSet={HeroImgDesktop} />
+            <source media='(min-width: 768px)' srcSet={HeroImgTablet} />
+            <img src={HeroImgMobile} alt='Hero Image' className='rounded-2xl' />
+          </picture>
         </div>
       </div>
     </section>

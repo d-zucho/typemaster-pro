@@ -5,7 +5,7 @@ const Header = () => {
     <header className='w-full'>
       <div
         id='wrapper'
-        className='bg-white px-8 max-w-5xl mx-auto flex justify-between my-6'
+        className='bg-white px-8 max-w-5xl mx-auto flex justify-between my-10'
       >
         <div id='logo-container'>
           <img src={Logo} alt='logo' />

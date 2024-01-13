@@ -1,6 +1,6 @@
 const BenefitCard = ({ benefit }) => {
   return (
-    <article className='shadow-lg p-4 rounded-2xl bg-slate-100'>
+    <article className='shadow-lg p-4 rounded-2xl bg-slate-100 hover:scale-105 transition-all'>
       <div className='object-cover p-4 bg-primary max-w-fit rounded-2xl'>
         <img src={benefit.icon} alt={benefit.name} className='bg-primary' />
       </div>
